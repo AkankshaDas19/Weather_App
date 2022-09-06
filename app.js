@@ -38,10 +38,13 @@ function displayResults(weather) {
     hilow.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
 
     if (weather_el.textContent == "Clouds") {
-        document.body.style.background = "url('clouds.jpg')";
+        document.body.style.background = "url('cloud-bg.jpg')";
     }
     else if (weather_el.textContent == "Clear") {
-        document.body.style.background = "url('clear.jpg')";
+        document.body.style.background = "url('clearsky.jpg')";
+    }
+    else if (weather_el.textContent == "Haze") {
+        document.body.style.background = "url('haze-bg.jpg')";
     }
 }
 
